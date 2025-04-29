@@ -1,0 +1,51 @@
+#contact-section{
+  display: none;
+}
+
+#contact-section form{
+  position: relative;
+  padding-bottom: 2.2rem;
+}
+
+#contact-section form .input-container{
+  display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   margin-bottom: 1rem;
+}
+
+#contact-section form input,
+#contact-section form textarea {
+  width: 100%;
+  padding: 1rem 0.6rem;
+  background-color: rgba(255, 255, 255, 0.1); /* Màu nền nhẹ để chữ dễ thấy */
+  color: white; /* Đảm bảo chữ nhập vào hiển thị rõ ràng */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  animation: scale-up 0.3s linear forwards;
+}
+
+#contact-section form input::placeholder,
+#contact-section form textarea::placeholder {
+  font-size: var(--small-Fsize);
+  color: rgba(255, 255, 255, 0.5); /* Làm mờ placeholder để không lẫn với chữ nhập */
+}
+
+#contact-section form textarea{
+  height: 15rem;
+}
+
+#contact-section form #submit-btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: var(--XS-Fsize);
+  color: rgb(0, 0, 0);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+
+  animation: scale-up 0.3s linear forwards;
+}

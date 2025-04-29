@@ -1,0 +1,87 @@
+#about-section .about-me{
+  color: var(--pastel-color2);
+  line-height: 1.5em;
+  margin-bottom: 5rem;
+}
+
+.skills-heading{
+  margin-bottom: 1rem;
+  font-size: calc(var(--XL-Fsize) - 0.2rem) ;
+}
+
+#about-section button{
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 0.7rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+#about-section button.selected{
+  color: var(--accent-color);
+  background-color: rgba(213, 196, 5, 0.102);
+}
+
+#about-section .skills-card-container.d-grid{
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 10px;
+}
+
+
+#about-section .skills-card-container .skill-card{
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.094);
+  border-radius: 5px;
+  padding: 0rem 0.8rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: 0.2s;
+  animation: scale-up 0.3s linear forwards;
+}
+
+#about-section .skills-card-container .skill-card.tools{
+  display: none;
+}
+
+#about-section .skills-card-container .skill-card:hover{
+  background-color: rgba(255, 255, 0, 0.099);
+}
+
+#about-section .skills-card-container .skill-card:hover .skill-mastery{
+  display: block;
+}
+
+#about-section .skill-card .skill-icon{
+   max-width: 1.6rem;
+}
+
+#about-section .skill-card .skill-name{
+  font-size: var(--XS-Fsize);
+}
+
+#about-section .skill-card .skill-mastery{
+  font-size: 0.7rem;
+  opacity: 0.8;
+  display: none;
+}
+
+
+@media(width > 500px){
+  #about-section .skills-card-container.d-grid{
+    grid-template-columns: 30% 30% 30%;
+  }  
+}
+
+@media(width > 950px){
+  #about-section .skills-card-container.d-grid{
+    grid-template-columns: 21% 21% 21% 21%;
+  }  
+}
+
