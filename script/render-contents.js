@@ -63,9 +63,6 @@ function renderProfileCard() {
       <ul>
         <li><a href="${personalData.fbLink}" target="_blank" rel="noopener noreferrer"><img src="images-and-icons/icons/facebook.png" alt="fb-icon" class="socmed-icon"></a></li>
         <li><a href="${personalData.youtubeLink}" target="_blank" rel="noopener noreferrer"><img src="images-and-icons/icons/youtube.png" alt="ytb-icon" class="socmed-icon"></a></li>
-        <li><a href="${personalData.insLink}" target="_blank" rel="noopener noreferrer"><img src="images-and-icons/icons/instagram.png" alt="ins-icon" class="socmed-icon"></a></li>
-        <li><a href="${personalData.tiktokLink}" target="_blank" rel="noopener noreferrer"><img src="images-and-icons/icons/tiktok.png" alt="tiktok-icon" class="socmed-icon"></a></li>
-        <li><a href="${personalData.linkedinLink}" target="_blank" rel="noopener noreferrer"><img src="images-and-icons/icons/linkedin.png" alt="linkedin-icon" class="socmed-icon"></a></li>
       </ul>
     </nav>`;
 
