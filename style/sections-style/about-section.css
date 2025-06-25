@@ -46,9 +46,11 @@
   animation: scale-up 0.3s linear forwards;
 }
 
+#about-section .skills-card-container .skill-card.edit,
 #about-section .skills-card-container .skill-card.tools{
   display: none;
 }
+
 
 #about-section .skills-card-container .skill-card:hover{
   background-color: rgba(255, 255, 0, 0.099);

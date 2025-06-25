@@ -90,7 +90,8 @@ function renderAboutSection() {
             <p class="about-me">${personalData.aboutMe}</p>
             
             <h2 class="skills-heading">My Skills</h2>
-            <button class="tech-stack-btn selected">Tech-stack</button>
+            <button class="code-btn selected">Code</button>
+            <button class="edit-btn">Edit</button>
             <button class="tools-btn">Tools</button>
             <div class="skills-card-container d-grid"> ${skillCardsHTML}</div>`;
 
