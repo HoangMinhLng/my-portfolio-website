@@ -5,7 +5,7 @@ const services = [
     description: 'Front-end Developer – Focuses on UI/UX, using HTML, CSS, JavaScript, and frameworks like React.'
   },
   {
-    name: 'UI Designer',
+    name: 'Designer',
     image: 'UI_designing.png', //Add service-image in ""images folder
     description: 'I am actively studying and expanding my knowledge in this field.'
   },

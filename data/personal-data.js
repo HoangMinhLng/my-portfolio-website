@@ -30,12 +30,12 @@ const personalData = {
               mastery: 'Elementary',
               type: 'code'
             },
-            {
-              name: 'PHP', 
-              icon: 'php.png', //Add your skill-icon in "icons" folder
-              mastery: 'Beginner',
-              type: 'code'
-            },
+            // {
+            //   name: 'PHP', 
+            //   icon: 'php.png', //Add your skill-icon in "icons" folder
+            //   mastery: 'Beginner',
+            //   type: 'code'
+            // },
             {
               name: 'Python', 
               icon: 'python_icon.png', //Add your skill-icon in "icons" folder
@@ -43,34 +43,34 @@ const personalData = {
               type: 'code'
             },
             {
-              name: 'REACT', 
-              icon: 'React (2).png', //Add your skill-icon in "icons" folder
-              mastery: 'Beginner',
-              type: 'code'
+              name: 'Illustrator', 
+              icon: 'illustrator.png', //Add your skill-icon in "icons" folder
+              mastery: 'Intermediate',
+              type: 'edit'
             },
             {
-              name: 'Node.js', 
-              icon: 'nodeJS icon.png', //Add your skill-icon in "icons" folder
-              mastery: 'Beginner',
-              type: 'code'
+              name: 'Premiere Pro', 
+              icon: 'premiere-pro.png', //Add your skill-icon in "icons" folder
+              mastery: 'Advance',
+              type: 'edit'
             },
             {
-              name: 'MongoDB',
-              icon: 'mongoDB icon.png', //Add your skill-icon in "icons" folder
-              mastery: 'Beginner',
-              type: 'code'
+              name: 'Photoshop',
+              icon: 'photoshop.png', //Add your skill-icon in "icons" folder
+              mastery: 'Intermediate',
+              type: 'edit'
             },
             {
               name: 'VS code',
               icon: 'visual-studio.png', //Add your skill-icon in "icons" folder
               mastery: 'Advanced',
-              type: 'edit'
+              type: 'tools'
             },
             {
               name: 'GitHub',
               icon: 'github (2).png', //Add your skill-icon in "icons" folder
               mastery: 'Advanced',
-              type: 'edit'
+              type: 'code'
             },
             {
               name: 'Git',
@@ -88,7 +88,7 @@ const personalData = {
               name: 'Adobe CreativeCloud',
               icon: 'adobe_icon.png', //Add your skill-icon in "icons" folder
               mastery: 'Intermediate',
-              type: 'edit'
+              type: 'tools'
             }
           ],
 }
