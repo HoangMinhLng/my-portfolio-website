@@ -5,7 +5,7 @@ const personalData = {
   profession: 'Portfolio',
   email: 'mail@lamnguyenhoangminh.info.vn',
   contactNumber: '0975 241 857',
-  address: 'Tân Phú, Hồ Chí Minh',
+  address: '63/5 Phạm Ngọc Thảo, Tân Phú, Hồ Chí Minh',
   fbLink: 'https://www.facebook.com/hoangminh97/' ,
   insLink: 'https://www.instagram.com/hoangminhln_/',
   linkedinLink: 'https://www.linkedin.com/in/minhlam97/',
@@ -27,19 +27,19 @@ const personalData = {
             {
               name: 'JS',
               icon: 'js (1).png', //Add your skill-icon in "icons" folder
-              mastery: 'Elementary',
+              mastery: 'Beginer',
               type: 'code'
             },
-            // {
-            //   name: 'PHP', 
-            //   icon: 'php.png', //Add your skill-icon in "icons" folder
-            //   mastery: 'Beginner',
-            //   type: 'code'
-            // },
+            {
+              name: 'CapCut', 
+              icon: 'capcut-icon.svg', //Add your skill-icon in "icons" folder
+              mastery: 'Intermediate',
+              type: 'edit'
+            },
             {
               name: 'Python', 
               icon: 'python_icon.png', //Add your skill-icon in "icons" folder
-              mastery: 'Elementary',
+              mastery: 'Intermediate',
               type: 'code'
             },
             {
@@ -75,7 +75,7 @@ const personalData = {
             {
               name: 'Git',
               icon: 'Git.png', //Add your skill-icon in "icons" folder
-              mastery: 'Intermediate',
+              mastery: 'Advanced',
               type: 'code'
             },
             {
