@@ -5,7 +5,7 @@ const personalData = {
   profession: 'Portfolio',
   email: 'mail@lamnguyenhoangminh.info.vn',
   contactNumber: '0975 241 857',
-  address: '63/5 Phạm Ngọc Thảo, Tân Phú, Hồ Chí Minh',
+  address: 'Tân Phú, Hồ Chí Minh',
   fbLink: 'https://www.facebook.com/hoangminh97/' ,
   insLink: 'https://www.instagram.com/hoangminhln_/',
   linkedinLink: 'https://www.linkedin.com/in/minhlam97/',
