@@ -79,12 +79,14 @@
           <section id="contact-section" class="contact">
             <h2 class="heading">Contact Me</h2>
             <hr class="line">
-            <form action="">
+            <form action="https://formspree.io/f/mrbogzdj"method="POST" class="contact-form d-grid">
               <div class="input-container">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required></div>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
                 <textarea name="message" id="message-input" placeholder="Your Message"></textarea>
-                <button id="submit-btn">Submit</button>
+                <button id="submit-btn" type="submit">Submit</button>
+                <p class="form-status"></p>
             </form>
             
           </section>

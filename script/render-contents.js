@@ -27,6 +27,12 @@ function renderWebsiteLogo(){
 
 // -----Rendering Side Profile Card-----//
 function renderProfileCard() {
+  
+  // Dùng .map() để tạo HTML cho từng email
+  const emailHTML = personalData.email.map(emailAddress => 
+    `<p class="card-value">${emailAddress}</p>`
+  ).join('');
+
   const profileCardHTML = `
    <img src="images-and-icons/images/${personalData.photo}" alt="profile-pic" class="profile-pic">
     <h3 class="my-name">${personalData.name}</h3>
@@ -38,7 +44,7 @@ function renderProfileCard() {
       </div>
       <div>
         <p class="card-heading">EMAIL</p>
-        <p class="card-value">${personalData.email}</p>
+        ${emailHTML} 
       </div>
     </div>
     <div class="card contact-number">
@@ -69,7 +75,6 @@ function renderProfileCard() {
   // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
   const profileCardContainer = document.querySelector('.profile-container').innerHTML = profileCardHTML;
 }
-
 
 //-----Rendering About Section-----//
 function renderAboutSection() {

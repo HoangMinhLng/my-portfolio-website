@@ -1,8 +1,9 @@
 import { renderMainPage } from "./render-contents.js";
      import { topNav } from "./top-nav.js";
+     import { contactFormFunctionality } from "./contact.js";
      import { aboutFunctionality } from "./about.js";
      import { projectFuntionality } from "./projects.js";
-     import { servicesFunctionality } from "./services.js"; // Thêm dòng này
+     import { servicesFunctionality } from "./services.js"; 
 
      renderMainPage();
 
@@ -10,7 +11,8 @@ import { renderMainPage } from "./render-contents.js";
        topNav();
        aboutFunctionality();
        projectFuntionality();
-       servicesFunctionality(); // Thêm dòng này
+       servicesFunctionality(); 
+       contactFormFunctionality();
      });
 
      // Show more details functionality
@@ -22,5 +24,5 @@ import { renderMainPage } from "./render-contents.js";
        sectionContainer.style.display = 'block';
      });
 
-     const copyright = `&copy;${new Date().getFullYear()} Hoàng Minh Portfolio `;
+     const copyright = `&copy;${new Date().getFullYear()} Hoàng Minh. All Rights Reserved.`;
      document.querySelector('footer .copyright-txt').innerHTML = copyright;
