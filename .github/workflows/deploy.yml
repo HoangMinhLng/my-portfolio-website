@@ -1,0 +1,57 @@
+# Tên của quy trình CI/CD
+name: Deploy Portfolio to GitHub Pages
+
+# Quy trình này sẽ chạy khi nào?
+on:
+  # Chạy mỗi khi bạn push lên nhánh "main"
+  push:
+    branches: ["main"]
+
+  # Cho phép bạn chạy workflow này thủ công từ tab Actions
+  workflow_dispatch:
+
+# Cấp quyền cho workflow để ghi vào GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Các công việc (jobs) cần thực hiện
+jobs:
+  # Công việc 1: Build (Vì trang của bạn là HTML/CSS/JS tĩnh, bước này chỉ đơn giản là gom tệp)
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Bước 1.1: Tải code từ repo của bạn về máy ảo
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Bước 1.2: Thiết lập GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Bước 1.3: Tải các tệp website (artifact) từ thư mục gốc
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Tải lên mọi thứ từ thư mục gốc
+          path: '.' 
+
+  # Công việc 2: Triển khai (Deploy)
+  deploy:
+    # Công việc này chỉ chạy SAU KHI công việc "build" hoàn thành
+    needs: build
+
+    # Chạy trên máy ảo Ubuntu
+    runs-on: ubuntu-latest
+
+    # Môi trường triển khai
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # Bước 2.1: Triển khai lên GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
