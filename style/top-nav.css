@@ -1,0 +1,37 @@
+.section-container .top-nav{
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 0.7rem 2.3rem;
+  background-color: var(--pastel-color);
+  border: 1px solid rgba(255, 255, 255, 0.079);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 10;
+}
+
+.section-container .top-nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.section-container .top-nav ul li.nav-btn{
+  text-decoration: none;
+  color: var(--pastel-color2);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.section-container .top-nav ul li.nav-btn.active{
+  color: var(--accent-color);
+}
+
+@media(width >= 900px){
+  .section-container .top-nav{
+    right: 0%;
+    transform: translateX(0%);
+    border-bottom-right-radius: 0px;
+  }
+}

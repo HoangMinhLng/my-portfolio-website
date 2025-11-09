@@ -1,0 +1,14 @@
+.landing-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-content img{
+  max-width: 5rem;
+}
+
+.landing-content .next-button{
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+}
